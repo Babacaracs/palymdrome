@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Pal</title>
+</head>
+<body>
+   <form>
+    <label for="nom" class="col-sm-3 control-label">Entrer un mot</label> 
+    <div class="inputWithIcon">
+<input type="text"  id="nom" name="nom" placeholder="mot" class="col-sm-3 form-control" required>
+<input type="submit" value="Verifier" onclick="bb();">
+</form>
+<script>
+
+function bb()
+{
+var a= document.getElementById("nom").value;
+var b = Array.from(a);
+var c= b.reverse();
+var d = c.toString();
+var f = a.split("");
+
+if(f==d)
+{
+    alert(" Vous avez entrer un palindrome :)");
+}
+else
+{
+alert("Vous n'avez pas entré un palindrome");
+
+alert (a);
+alert (Array.from(a));
+alert (d);
+alert (f);
+}
+}
+</script>
+
+</body>
+</html>
